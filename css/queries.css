@@ -1,0 +1,52 @@
+@media (max-width:25.62em){
+    .clock{
+        height: 300px;
+        width: 300px;
+    }
+
+    .wish p{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .hour-hand{
+        height: 70px;
+    }
+
+    .min-hand{
+        height: 100px;
+    }
+
+    .sec-hand{
+        height: 90px;
+    }
+
+    .tasks{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width:23.75em){
+    .clock{
+        height: 250px;
+        width: 250px;
+    }
+
+    /* .wish p{
+        text-align: center;
+        margin-bottom: 3rem;
+    } */
+
+    .hour-hand{
+        height: 60px;
+    }
+
+    .min-hand{
+        height: 90px;
+    }
+
+    .sec-hand{
+        height: 80px;
+    }
+}

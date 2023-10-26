@@ -1,0 +1,231 @@
+@import url(general.css);
+
+/* Clock Section */
+
+.modern-clock{
+    background-image: linear-gradient(#343634,#021543);
+    /* height: 100vh;
+    width: 100vw; */
+    padding: 0 5rem;
+}
+
+/* NavBar */
+nav{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand p{
+    color: #DEB614;
+}
+
+.user p{
+    color: #14ACFC;
+}
+
+/* Main Content */
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+    
+    flex-wrap: wrap;
+}
+
+/* Dialogue and food type */
+
+.dialogue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wish{
+    color: #DEB614;
+  
+}
+
+.food-type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: #14ACFC;
+}
+
+.food-icon{
+    color: #DEB614;
+}
+
+/* Clock */
+.clock{
+    margin-top: 5rem;
+    height: 400px;
+    width: 400px;
+    background-color: #3E4B56;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #DEB614;
+    /* overflow: hidden; */
+}
+
+.time{
+    
+    position: absolute;
+    transform: rotate(calc(30deg *var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+
+
+
+.dial{
+    /* width: 4px;
+    height: 30px;
+    
+    position: relative; */
+    color: #DEB614;
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+    font-size: 2rem;
+   
+}
+
+/* .dial::after{
+    content: "";
+    height: 20px;
+    width: 6px;
+    background-color: #3E4B56;
+    position: absolute;
+    bottom: -1px;
+    left: -4px;
+    transform: rotate(-10deg);
+} */
+
+/* .dial::before{
+    content: "";
+    height: 20px;
+    width: 6px;
+    background-color: #3E4B56;
+    position: absolute;
+    bottom: -1px;
+    right: -4px;
+    transform: rotate(10deg);
+} */
+
+/* Clock Hands */
+.clock-mid{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #14ACFC;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+
+.time-hands{
+    transform-origin: bottom center;
+}
+
+.hour-hand{
+    position: absolute;
+    height: 100px;
+    width: 5px;
+    background-color: #14ACFC;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%);
+    /* transform: rotate(90deg); */
+    border-radius: 10px;
+    transform-origin: top center;
+}
+
+.min-hand{
+    position: absolute;
+    height: 150px;
+    width: 5px;
+    background-color: #14ACFC;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%);
+    /* transform: rotate(0deg); */
+    border-radius: 10px;
+    transform-origin: top center;
+}
+
+.sec-hand{
+    position: absolute;
+    height: 130px;
+    width: 3px;
+    background-color: #DEB614;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%);
+   
+    transform-origin: center top;
+    border-radius: 10px;
+}
+
+/* Task Section */
+.tasks{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 10rem 0;
+}
+
+
+
+.task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.task::after{
+    content: "PM";
+    color: #DEB614;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+
+.task-1::after{
+    content: "AM";
+    color: #DEB614;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.task-time{
+    color: #14ACFC;
+}
+
+.todo{
+    color: #DEB614;
+}
+
+.arrow-icon{
+    font-weight: 300;
+    font-size: 3.6rem;
+    color:#14ACFC;
+}
